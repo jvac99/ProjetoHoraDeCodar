@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block title %}Lista de tarefas{% endblock %} {% block content %}
+
+<div class="offset-1 col-10 list-div">
+    <h1 S>Lista de Tarefas</h1>
+    <div class="col-2 add-div">
+        <i class="fas fa-plus"></i>
+        <label for="">Adicionar tarefa</label>
+    </div>
+    <div class="col-9 search-div">
+        <input type="search" name="search" id="search" placeholder="Digite o nome da tarefa para buscar">
+        <i class="fas fa-search"></i>
+    </div>
+
+    <ul class="tak-list">
+        <li class="tak-item">
+            <span>Título</span>
+            <span><i class="fas fa-trash"></i></span>
+            <span><i class="fas fa-edit"></i></span>
+        </li>
+        <li class="tak-item">
+            <span>Título</span>
+            <span><i class="fas fa-trash"></i></span>
+            <span><i class="fas fa-edit"></i></span>
+        </li>
+        <li class="tak-item">
+            <span>Título</span>
+            <span><i class="fas fa-trash"></i></span>
+            <span><i class="fas fa-edit"></i></span>
+        </li>
+    </ul>
+</div>
+{% endblock %}
